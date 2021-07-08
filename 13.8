@@ -1,0 +1,20 @@
+kbil = int(input('Введите количество билетов - '))
+a = 1
+sum = 0
+while a <= kbil:
+    voz = int (input ('Ведите возраст посетителя - '))
+    if voz < 18:
+        cen = 0
+        sum = sum + cen
+        a = a + 1
+    elif 18 <= voz <=25:
+        cen = 990
+        sum = sum + cen
+        a = a +1
+    elif voz > 25:
+        cen = 1390
+        sum = sum + cen
+        a = a + 1
+if kbil > 3:
+    sum = 0.9 * sum
+print ("Сумма билетов - ", sum)
